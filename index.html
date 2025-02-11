@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Towards realistic co-speech gesture video generation with generalized 2D motion diffusion model</title>
-  <link rel="icon" href="./static/images/favicon.ico">
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -83,13 +83,24 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
                       <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Dataset PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Dataset</span>
                     </a>
                   </span>
 
@@ -129,12 +140,19 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/exhibition.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        Click the video to full screen.
       </h2>
+      <h2 style="color: red; font-weight: bold; text-align: justify;">
+        Description...  
+      </h2>
+      <!-- <h2 class="subtitle has-text-centered">
+        Description... -->
+        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
+      <!-- </h2> -->
     </div>
   </div>
 </section>
@@ -145,10 +163,23 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3" style="text-align: center;">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Co-speech gesture video generation aims to create videos of a specific person speaking a given speech audio. 
+            This task has significant applications in digital humans and human-machine interaction. 
+            Existing methods are typically warping-based, 
+            which is prone to produce artifacts with large pose variations. 
+            Besides, datasets adopted by them are limited in diversity and capacity, 
+            leading to less realistic video generation. To address these issues, 
+            we introduce a large-scale dataset with diverse scenarios and rich annotations. 
+            Moreover, we propose a novel approach that replaces the warping module with 
+            a full-body human video generation model. Our method includes an audio-to-2D 
+            keypoints diffusion model and incorporates video descriptions 
+            to resolve audio-motion ambiguity. Extensive experiments demonstrate 
+            that our approach significantly outperforms state-of-the-art methods on our dataset and the popular PATS, 
+            Ted-talks datasets.
+            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit. -->
           </p>
         </div>
       </div>
@@ -158,34 +189,34 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Image carousel 
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
+         Your image here 
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
+         Your image here 
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
+         Your image here 
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
+       Your image here 
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -195,22 +226,57 @@
 </div>
 </div>
 </section>
-<!-- End image carousel -->
+End image carousel -->
 
-
-
-
-<!-- Youtube video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+       <h2 class="title is-3" style="text-align: center;">Co-data Dataset</h2>
+       <img src="static/images/codata_dataset.png" alt="MY ALT TEXT"/>
+        <h2>
+          Description...
+          <!-- StableAnimator is based on the commonly used SVD following previous works. A reference image is processed through the diffusion model via three pathways: (1) Transformed into a latent code by a frozen VAE Encoder. The latent code is duplicated to match video frames, then concatenated with main latents. (2) Encoded by the CLIP Image Encoder to obtain image embeddings, which are fed to each cross-attention block of a denoising U-Net and our Face Encoder, respectively, to modulate the synthesized appearance. (3) Input to Arcface to gain face embeddings, which are subsequently refined for further alignment via our Face Encoder. Refined face embeddings are then fed to the denoising U-Net. A PoseNet with a similar architecture as AnimateAnyone extracts the features of the pose sequence, which are then added to the noisy latents. We replace the original input video frames with random noise during inference, while the other inputs stay the same. We propose a novel HJB-equation-based face optimization to enhance ID consistency and eliminate reliance on third-party post-processing tools. It integrates the solution process of the HJB equation into the denoising, allowing optimal gradient direction toward high ID consistency. -->
+        </h2>
+   </div>
+    <!-- <h2 class="subtitle has-text-centered">
+        If you have any suggestions or find our work helpful, feel free to contact me.
+        <a href="mailto:francisshuyuan@gmail.com">Email: francisshuyuan@gmail.com</a>
+    </h2> -->
+</div>
+</div>
+</section>
+ 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
+       <h2 class="title is-3" style="text-align: center;">Method</h2>
+       <img src="static/images/method.png" alt="MY ALT TEXT"/>
+        <h2>
+          Description...
+          <!-- StableAnimator is based on the commonly used SVD following previous works. A reference image is processed through the diffusion model via three pathways: (1) Transformed into a latent code by a frozen VAE Encoder. The latent code is duplicated to match video frames, then concatenated with main latents. (2) Encoded by the CLIP Image Encoder to obtain image embeddings, which are fed to each cross-attention block of a denoising U-Net and our Face Encoder, respectively, to modulate the synthesized appearance. (3) Input to Arcface to gain face embeddings, which are subsequently refined for further alignment via our Face Encoder. Refined face embeddings are then fed to the denoising U-Net. A PoseNet with a similar architecture as AnimateAnyone extracts the features of the pose sequence, which are then added to the noisy latents. We replace the original input video frames with random noise during inference, while the other inputs stay the same. We propose a novel HJB-equation-based face optimization to enhance ID consistency and eliminate reliance on third-party post-processing tools. It integrates the solution process of the HJB equation into the denoising, allowing optimal gradient direction toward high ID consistency. -->
+        </h2>
+   </div>
+    <!-- <h2 class="subtitle has-text-centered">
+        If you have any suggestions or find our work helpful, feel free to contact me.
+        <a href="mailto:francisshuyuan@gmail.com">Email: francisshuyuan@gmail.com</a>
+    </h2> -->
+</div>
+</div>
+</section>
+ 
+
+
+<!-- Youtube video 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       Paper video. 
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
+             Youtube embed code here 
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -218,48 +284,78 @@
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+ End youtube video -->
 
 
-<!-- Video carousel -->
+<!-- Comparisons with SOTA methods -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      <h2 class="title is-3" style="text-align: center;">Comparisons with SOTA methods</h2>
+      <div id="results-carousel" class="carousel results-carousel" style="text-align: center;">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <source src="static/videos/exhibition.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <source src="static/videos/exhibition.mp4"
             type="video/mp4">
           </video>
         </div>
       </div>
+      <h2 class="subtitle has-text-centered">
+        Click the video to full screen.
+      </h2>
+    </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Comparisons with SOTA methods -->
+
+
+<!-- Ablation study -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="text-align: center;">Ablation study</h2>
+      <div id="results-carousel" class="carousel results-carousel" style="text-align: center;">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/exhibition.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/exhibition.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        Click the video to full screen.
+      </h2>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Ablation study -->
 
 
 
 
 
 
-<!-- Paper poster -->
+<!-- Paper poster 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -271,7 +367,7 @@
       </div>
     </div>
   </section>
-<!--End paper poster -->
+End paper poster -->
 
 
 <!--BibTex citation -->

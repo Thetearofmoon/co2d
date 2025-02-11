@@ -1,0 +1,13 @@
+Co-speech gesture video generation aims to create videos of a specific person speaking a given speech audio. 
+This task has significant applications in digital humans and human-machine interaction. 
+Existing methods are typically warping-based, 
+which is prone to produce artifacts with large pose variations. 
+Besides, datasets adopted by them are limited in diversity and capacity, 
+leading to less realistic video generation. To address these issues, 
+we introduce a large-scale dataset with diverse scenarios and rich annotations. 
+Moreover, we propose a novel approach that replaces the warping module with 
+a full-body human video generation model. Our method includes an audio-to-2D 
+keypoints diffusion model and incorporates video descriptions 
+to resolve audio-motion ambiguity. Extensive experiments demonstrate 
+that our approach significantly outperforms state-of-the-art methods on our dataset and the popular PATS, 
+Ted-talks datasets.
